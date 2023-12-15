@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../../../Documents/University Web Development"
+	},
+	{
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "1st WEB"
+  }
+}

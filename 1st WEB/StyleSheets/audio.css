@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+body {
+  height: 100vh;
+}
+
+.header {
+  height: 20vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(104, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/IMG/duotone.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  width: 200px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  /* padding: 8px 15px; */
+  position: relative;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 45px;
+}
+
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: white;
+  margin: auto;
+}
+
+.nav-links ul li :hover::after {
+  width: 100%;
+}
+
+.parent {
+  display: flex;
+  width: 100vw;
+  height: 80vh;
+  background-image: linear-gradient(rgba(104, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/IMG/duotone.jpg);
+}
+
+/* PARAGRAPHS */
+
+.text-box3 {
+  color: white;
+}
+
+.text-box2 {
+  color: white;
+}
+
+.image-1 {
+  height: 200px;
+}
+
+.image-2 {
+  height: 200px;
+}
+/* .text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+ left: 50%; 
+  transform: translate(-50%, -50%);
+
+ text-align: center; 
+}
+
+.text-box2 {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+/* Using 'text-align: center' and commenting 'width:400px' with put everything in the center */
+
+/* HEADER AND TEXT ON HOMEPAGE */
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  width: 450px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+@media (max-width: 700px) {
+  h1 {
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+  }
+  .nav-links ul {
+    padding: 30px;
+  }
+}
