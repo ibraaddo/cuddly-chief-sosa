@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+    <link rel="stylesheet" href="audio.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML CSS Website</title>
+    <link rel="stylesheet" href="styles.css" />
+
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>Ibrahim Addo</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span> <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/index.html" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/about.html" class="navbar__links">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/audio.html" class="navbar__links">Audio</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/contact.html" class="button">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <h1>Audio Projects</h1>
+          <p>Music Production is a hobby of mine where I create loops and instrumentals, with various instruments (vst's). My usual objective when opening my DAW is to create melodies that are rather abstract but work well together. For more information, click on the 'Audio' tab above.
+          </p> 
+    
+         <img name="slide" width="400" height="400"
+        </div>
+       
+      </div>
+    </div>
+
+<!-- Websites -->
+<div class="services">
+  <section class="langauges">
+    <div> <h1>Programs</h1></div>
+     <div class="row">
+       <div class="lang-col">
+         <h3>HTML</h3>
+         <p>
+           After indulging in HTML, I've found joy in crafting and recreating sections of websites. My moderate experience has empowered me to navigate through the intricacies of HTML, allowing me to bring my design ideas to life. I take pride in dissecting and reconstructing web elements with plans of mastering the art of structuring content and enhancing user experience. As I continue to expand my skills, I look forward to tackling more complex challenges and contributing my expertise to the ever-evolving web development landscape
+         </p>
+       </div>
+  
+     
+       </section>
+     </div>
+   </section>
+</div>
+
+
+
+
+    <script>
+
+var i = 0;
+var images = [];
+var time = 1000;
+
+// Image list
+
+images[0] = 'redtint2.jpg';
+images[1] = '/images/NewTint.png';
+images[2] = '/images/NewJazz.png';
+
+function changeImg(){
+    document.slide.src = images[i];
+
+    if(i < images.length - 1){
+i ++;
+
+    } else {
+        i = 0;
+    }
+setTimeout("changeImg()",time);
+
+}
+
+window.onload = changeImg;
+
+
+    </script>
+  </body>
+</html>
+</body>
+</html>
